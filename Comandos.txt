@@ -1,0 +1,11 @@
+node ace make:model nome_classe -c -m
+
+node ace migration:run
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; --> Mudar senha banco
+node ace make:validator create --> Criar um validador
+
+npm run dev --> Olhar arquivo pacote json. rodar projeto
+crl + c para projeto
+
+node ace make:seeder nomeSeed --> colocar dados iniciais no banco
